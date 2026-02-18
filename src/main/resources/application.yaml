@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: routing-service
+
+server:
+  port: 8080
+
+app:
+  countries:
+    data-path: classpath:data/countries.json
+
+logging:
+  level:
+    com.daniel.routingservice: INFO
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
